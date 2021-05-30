@@ -1,6 +1,6 @@
 # PhotoFinder (photofinder)
 
-Find any photo in your phone with its filename
+Android Capacitor app capable of taking photos, storing them in the filesystem and also retrieving other pictures with its filename as long as they were saved in the Data directory.
 
 ## Install the dependencies
 ```bash
