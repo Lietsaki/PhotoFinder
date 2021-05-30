@@ -34,7 +34,8 @@ export default {
     async takePhoto() {
       const options = {
         resultType: CameraResultType.Uri,
-        source: CameraSource.Camera
+        source: CameraSource.Camera,
+        saveToGallery: true
       };
 
       const originalPhoto = await Camera.getPhoto(options);
