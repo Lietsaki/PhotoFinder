@@ -70,6 +70,7 @@ export default {
           directory: FilesystemDirectory.Data
         })
 
+        // img src's must receive a dataURL, not a raw base64 string. A dataURL is basically a prefixed base64 string.
         this.image = `data:image/jpeg;base64,${file.data}`
         this.broughtFrom = 'Image brought from file system'
       } catch (error) {
