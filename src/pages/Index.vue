@@ -80,7 +80,7 @@ export default {
         return
       }
 
-      // Here's your blob ready to be uploaded to firebase
+      // Here's your blob ready to be uploaded to firebase - Note that firebase also allows base64 uploads through its putString method. Ex. putString(file.data, 'base64')
      const base64 = await fetch(file);
      const myBlob = await base64.blob();
      console.log(myBlob)
